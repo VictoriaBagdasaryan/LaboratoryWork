@@ -12,11 +12,17 @@ namespace LaboratoryWork.Model
         public string NameRole { get; set; }
         public Role() { }
 
-public Role(int id, string nameRole)
+        public Role(int id, string nameRole)
         {
             this.Id = id;
             this.NameRole = nameRole;
         }
+
+        public Role ShallowCopy()
+        {
+            return (Role)this.MemberwiseClone();
+        }
+
     }
 
 }

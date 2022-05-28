@@ -1,4 +1,5 @@
-﻿using LaboratoryWork.View;
+﻿using LaboratoryWork.Model;
+using LaboratoryWork.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,8 @@ namespace LaboratoryWork
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static int IdRole { get; set; }
+
         public MainWindow()
         {
             InitializeComponent();
@@ -36,6 +39,5 @@ namespace LaboratoryWork
             WindowRole wRole = new WindowRole();
             wRole.Show();
         }
-
     }
 }
